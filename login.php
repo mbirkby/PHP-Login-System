@@ -16,20 +16,27 @@
 <body>
 
 <div class="container mt-3 p-3 border" >
-  <?php
-     echo "Hello World: Today is ";
-     echo date("Y m d");
-  ?>
-
+  <h1 class="mt-4">Login</h1>
+  <form action="/action_page.php">
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" placeholder="Enter email" id="email" required='required'>
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" id="pwd" required='required'>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    </form> 
 </div>
-<p>
-  <a href="/login.php">login</a>
-  <a href="/register.php">register</a>
-</p>
 <?php 
   require_once "inc/footer.php" ;
 ?>
-
 
 
 </body>
