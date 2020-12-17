@@ -17,7 +17,7 @@
 
 <div class="container mt-3 p-3 border" >
    <h1>Register</h1>
-   <form action="/action_page.php" class="mt-4">
+   <form action="/action_page.php" class="mt-4 js.register">
     <div class="form-group">
         <label for="email">Email address:</label>
         <input type="email" class="form-control" placeholder="Enter email" id="email" required='required'>
