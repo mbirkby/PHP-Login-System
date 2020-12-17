@@ -17,7 +17,7 @@
 
 <div class="container mt-3 p-3 border" >
    <h1>Register</h1>
-   <form action="/action_page.php" class="mt-4 js.register">
+   <form  class="mt-4 js-register">
     <div class="form-group">
         <label for="email">Email address:</label>
         <input type="email" class="form-control" placeholder="Enter email" id="email" required='required'>
@@ -31,12 +31,13 @@
         <input class="form-check-input" type="checkbox"> Remember me
         </label>
     </div>
+    <div class="js-error" style="display:none;">
+      Test
+    </div>
     <button type="submit" class="btn btn-primary">Register</button>
     </form> 
 </div>
-<?php 
-  require_once "inc/footer.php" ;
-?>
+<?php require_once "inc/footer.php"; ?>
 
 
 </body>
