@@ -3,6 +3,12 @@
       exit('You do not have a config file');
   }
 
+  //Sessions are turned on
+  if(!isset($_SESSION)) {
+    session_start();
+  }
+  
+  //Show errors
   error_reporting(-1);
   ini_set('display_errors','On');
   

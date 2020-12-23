@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Login Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 
 <div class="container mt-3 p-3 border" >
   <h1 class="mt-4">Login</h1>
-  <form action="/action_page.php">
+  <form class="js-login">
     <div class="form-group">
         <label for="email">Email address:</label>
         <input type="email" class="form-control" placeholder="Enter email" id="email" required='required'>
@@ -30,6 +30,9 @@
         <label class="form-check-label">
         <input class="form-check-input" type="checkbox"> Remember me
         </label>
+    </div>
+    <div class="js-error" style="display:none;">
+      Test
     </div>
     <button type="submit" class="btn btn-primary">Login</button>
     </form> 
