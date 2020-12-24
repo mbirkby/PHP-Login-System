@@ -25,8 +25,7 @@
 
 </div>
 <p class="container">
-  <a href="/login.php">login</a>
-  <a href="/register.php">register</a>
+  <a href="/logout.php">logout</a>
 </p>
 <?php 
   require_once "inc/footer.php" ;
