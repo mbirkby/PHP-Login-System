@@ -1,6 +1,7 @@
 <?php 
   define('__CONFIG__', true);
   require_once "inc/config.php" ;
+  forceDashboard();
   ?>
 <!DOCTYPE html>
 <html lang="en">

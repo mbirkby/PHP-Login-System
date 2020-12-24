@@ -1,6 +1,8 @@
 <?php 
   define('__CONFIG__', true);
   require_once "inc/config.php" ;
+
+  forceLogin();
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +19,12 @@
 <body>
 
 <div class="container mt-3 p-3 border" >
-  <?php
-     echo "Hello World: Today is ";
-     echo date("Y-m-d");
-  ?>
+  <p>
+    Dashboard here your are signed in as  user <?php echo $_SESSION['user_id']; ?>
+  </p>
 
 </div>
-<p>
+<p class="container">
   <a href="/login.php">login</a>
   <a href="/register.php">register</a>
 </p>
