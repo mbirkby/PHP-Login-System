@@ -2,7 +2,11 @@
   define('__CONFIG__', true);
   require_once "inc/config.php" ;
 
-  forceLogin();
+  Page::forceLogin();
+
+  $user = new User($_SESSION['user_id']);
+  
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@
 
 <div class="container mt-3 p-3 border" >
   <p>
-    Dashboard here your are signed in as  user <?php echo $_SESSION['user_id']; ?>
+    Hello <?php echo $user->email ?>, you registered on <?php echo $user->reg_time ?>
   </p>
 
 </div>
